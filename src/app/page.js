@@ -565,7 +565,7 @@ export default function Home() {
                   value={form.parentName}
                   onChange={handleChange}
                   required
-                  placeholder="학부모 성함"
+                  placeholder="성함"
                   className="rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-[#315CD1]"
                 />
                 <input

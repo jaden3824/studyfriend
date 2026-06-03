@@ -42,17 +42,14 @@ const prices = [
   {
     grade: "초등학생",
     monthly: "월 24만원",
-    desc: "기초 학습, 공부 습관 형성, 학교 진도 보완, 중등 선행 준비",
   },
   {
     grade: "중학생",
     monthly: "월 36만원",
-    desc: "기초 개념, 내신 대비, 공부 습관 형성, 고등 선행 준비",
   },
   {
     grade: "고등학생",
     monthly: "월 40만원",
-    desc: "내신 관리, 모의고사 대비, 약점 단원 보완, 수능 기초·심화 대비",
   },
 ];
 
@@ -201,7 +198,7 @@ export default function Home() {
             href="#contact"
             className="rounded-full bg-[#315CD1] px-5 py-2.5 text-sm font-black text-white shadow-sm transition hover:bg-[#284FBA]"
           >
-            무료 상담
+            무료 상담하기
           </a>
         </div>
       </header>
@@ -457,8 +454,8 @@ export default function Home() {
             학년별 월 과외비
           </h2>
           <p className="mx-auto mt-5 max-w-3xl leading-8 text-slate-600">
-            아래 금액은 학년별 권장 과외비입니다. 실제 과외비는 과목, 지역,
-            수업 방식, 선생님 경력에 따라 달라질 수 있습니다.
+            실제 과외비는 과목, 지역, 수업 방식, 선생님 경력에 따라 달라질 수
+            있습니다.
           </p>
         </div>
 
@@ -466,13 +463,12 @@ export default function Home() {
           {prices.map((item) => (
             <div
               key={item.grade}
-              className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-[#CAD9FF] hover:shadow-lg hover:shadow-[#DDE7FF]"
+              className="rounded-[2rem] border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:border-[#CAD9FF] hover:shadow-lg hover:shadow-[#DDE7FF]"
             >
               <h3 className="text-2xl font-black">{item.grade}</h3>
               <p className="mt-4 text-3xl font-black text-[#315CD1]">
                 {item.monthly}
               </p>
-              <p className="mt-5 leading-7 text-slate-600">{item.desc}</p>
             </div>
           ))}
         </div>
